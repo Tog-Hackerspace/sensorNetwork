@@ -12,7 +12,7 @@ export class PowerSwitch extends Switch {
   public lastUpdated: any = null;
   public socket: string = 'all';
 
-  constructor(client: IMessageTransport) {
+  constructor(client: IMessageTransport, socket?: string) {
     super(
       client,
       PowerSwitchSchema.ack,
@@ -26,11 +26,12 @@ export class PowerSwitch extends Switch {
       'common_room',
       AccessLevel.READ_WRITE
     );
+    this.socket = socket ? socket : 'all';
   }
 
-  protected _onSetState(state: boolean): any {
+  protected _onSetState(state: any): any {
 
-    (this as IDevice).publish({
+    super.publish({
       state: state,
       socket: this.socket
     });
