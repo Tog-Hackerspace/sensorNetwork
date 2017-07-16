@@ -1,4 +1,4 @@
-import { Switch, IMessageTransport } from '@tog-hackerspace/sensor';
+import { Switch, IMessageTransport } from '@seannicholls/sensor';
 export declare class PowerSwitch extends Switch {
     lastUpdated: any;
     socket: string;

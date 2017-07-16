@@ -2,8 +2,9 @@ import events = require('events');
 import {
   AccessLevel,
   DeviceChannels,
-  IMessageTransport
-} from '@tog-hackerspace/sensor';
+  IMessageTransport,
+  IDevice
+} from '@seannicholls/sensor';
 import { KnifeSwitch } from './knife';
 import { PowerSwitch } from './power';
 
@@ -45,7 +46,7 @@ export class SensorNetwork extends events.EventEmitter {
     return out;
   }
 
-  public get KnifeSwitch(): KnifeSwitch {
+  public get KnifeSwitch(): IDevice {
     if(!this._sensors.KnifeSwitch) {
       this._sensors.KnifeSwitch = new KnifeSwitch(this._client);
       this._sensors.KnifeSwitch.on(DeviceChannels.MESSAGE, (data: any) => {
@@ -56,7 +57,7 @@ export class SensorNetwork extends events.EventEmitter {
     return this._sensors.KnifeSwitch;
   }
 
-  public get PowerSwitch(): PowerSwitch {
+  public get PowerSwitch(): IDevice {
     if(!this._sensors.PowerSwitch) {
       this._sensors.PowerSwitch = new PowerSwitch(this._client);
       this._sensors.PowerSwitch.on(DeviceChannels.MESSAGE, (data: any) => {

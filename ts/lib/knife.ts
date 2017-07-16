@@ -2,7 +2,7 @@ import {
   AccessLevel,
   Switch,
   IMessageTransport
-} from '@tog-hackerspace/sensor';
+} from '@seannicholls/sensor';
 import { Joi } from './joi';
 import { KnifeSwitchSchema } from './knife.schema'
 

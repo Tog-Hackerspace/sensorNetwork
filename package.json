@@ -15,7 +15,7 @@
   "author": "Sean Nicholls",
   "license": "MIT",
   "dependencies": {
-    "@tog-hackerspace/sensor": "file:../sensorLib"
+    "@seannicholls/sensor": "file:../sensor"
   },
   "devDependencies": {
     "@types/bluebird": "^3.5.8",

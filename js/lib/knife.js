@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const sensor_1 = require("@tog-hackerspace/sensor");
+const sensor_1 = require("@seannicholls/sensor");
 const knife_schema_1 = require("./knife.schema");
 class KnifeSwitch extends sensor_1.Switch {
     constructor(client) {

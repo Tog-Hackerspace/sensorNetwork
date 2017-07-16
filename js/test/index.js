@@ -16,7 +16,6 @@ sensorNet.PowerSwitch.on('message', (powerSwitch, msg) => {
 sensorNet.PowerSwitch.on('update', (powerSwitch, delta) => {
     console.log('Update: ', delta);
 });
-console.log(sensorNet.PowerSwitch.on);
 setInterval(() => {
     sensorNet.PowerSwitch.state = !sensorNet.PowerSwitch.state;
     console.log('state', sensorNet.PowerSwitch.state);

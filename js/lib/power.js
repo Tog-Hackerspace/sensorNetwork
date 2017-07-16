@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const sensor_1 = require("@tog-hackerspace/sensor");
+const sensor_1 = require("@seannicholls/sensor");
 const power_schema_1 = require("./power.schema");
 class PowerSwitch extends sensor_1.Switch {
     constructor(client) {
@@ -12,10 +12,11 @@ class PowerSwitch extends sensor_1.Switch {
         this.socket = 'all';
     }
     _onSetState(state) {
-        return {
+        this.publish({
             state: state,
             socket: this.socket
-        };
+        });
+        return true;
     }
 }
 exports.PowerSwitch = PowerSwitch;

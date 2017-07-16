@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const events = require("events");
-const sensor_1 = require("@tog-hackerspace/sensor");
+const sensor_1 = require("@seannicholls/sensor");
 const knife_1 = require("./knife");
 const power_1 = require("./power");
 class SensorChannels {

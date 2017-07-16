@@ -1,8 +1,9 @@
 import {
   AccessLevel,
   Switch,
-  IMessageTransport
-} from '@tog-hackerspace/sensor';
+  IMessageTransport,
+  IDevice
+} from '@seannicholls/sensor';
 import { Joi } from '../lib/joi';
 import { PowerSwitchSchema } from './power.schema'
 
@@ -28,9 +29,12 @@ export class PowerSwitch extends Switch {
   }
 
   protected _onSetState(state: boolean): any {
-    return {
+
+    (this as IDevice).publish({
       state: state,
       socket: this.socket
-    };
+    });
+
+    return true;
   }
 }

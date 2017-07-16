@@ -1,7 +1,7 @@
 import {
   IMessageTransport,
   Callback
-} from '@tog-hackerspace/sensor';
+} from '@seannicholls/sensor';
 
 export class MockTransport implements IMessageTransport {
 

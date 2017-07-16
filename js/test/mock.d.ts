@@ -1,4 +1,4 @@
-import { IMessageTransport, Callback } from '@tog-hackerspace/sensor';
+import { IMessageTransport, Callback } from '@seannicholls/sensor';
 export declare class MockTransport implements IMessageTransport {
     subscribe(topic: string, callback?: Callback): any;
     on(topic: string, callback?: Callback): any;
