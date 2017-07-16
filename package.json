@@ -1,0 +1,28 @@
+{
+  "name": "@tog-hackerspace/sensorNetwork",
+  "version": "0.0.6",
+  "description": "A hackerspace sensor library",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/tsc",
+    "build:test": "npm run build; npm run test",
+    "test": "node ./js/test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Tog-Hackerspace/sensor"
+  },
+  "author": "Sean Nicholls",
+  "license": "MIT",
+  "dependencies": {
+    "@tog-hackerspace/sensor": "file:../sensorLib"
+  },
+  "devDependencies": {
+    "@types/bluebird": "^3.5.8",
+    "@types/node": "^8.0.13",
+    "@types/uuid": "^3.0.0",
+    "bluebird": "^3.5.0",
+    "joi-browser": "^10.6.0",
+    "typescript": "^2.4.1"
+  }
+}

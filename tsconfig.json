@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "declaration": true,
+    "outDir": "./js",
+    "strict": true,
+    "sourceMap": true,
+    "noImplicitAny": false
+  },
+  "files": [
+    "./typings/joi/index.d.ts"
+  ],
+  "include": [
+    "./ts/**/*"
+  ],
+  "exclude": [
+    "./ts/**/*.js"
+  ]
+}

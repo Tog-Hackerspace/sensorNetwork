@@ -1,0 +1,79 @@
+{
+  "name": "@tog-hackerspace/sensorNetwork",
+  "version": "0.0.6",
+  "lockfileVersion": 1,
+  "requires": true,
+  "dependencies": {
+    "@tog-hackerspace/sensor": {
+      "version": "file:../sensorLib",
+      "dependencies": {
+        "@types/bluebird": {
+          "version": "3.5.8",
+          "bundled": true
+        },
+        "@types/node": {
+          "version": "8.0.10",
+          "bundled": true
+        },
+        "@types/uuid": {
+          "version": "3.0.0",
+          "bundled": true,
+          "requires": {
+            "@types/node": "8.0.10"
+          }
+        },
+        "bluebird": {
+          "version": "3.5.0",
+          "bundled": true
+        },
+        "joi-browser": {
+          "version": "10.6.0",
+          "bundled": true
+        },
+        "typescript": {
+          "version": "2.4.1",
+          "bundled": true
+        }
+      }
+    },
+    "@types/bluebird": {
+      "version": "3.5.8",
+      "resolved": "https://registry.npmjs.org/@types/bluebird/-/bluebird-3.5.8.tgz",
+      "integrity": "sha512-rBfrD56OxaqVjghtVqp2EEX0ieHkRk6IefDVrQXIVGvlhDOEBTvZff4Q02uo84ukVkH4k5eB1cPKGDM2NlFL8A==",
+      "dev": true
+    },
+    "@types/node": {
+      "version": "8.0.13",
+      "resolved": "https://registry.npmjs.org/@types/node/-/node-8.0.13.tgz",
+      "integrity": "sha512-Y3EAG7VA7NVNbZek/fjJtILnmTk/ZfpJuWZGDBqDZ1dVIxgJJJ82fXPW7pKnqyV9CD/9bcPOCi7eErUqGMHOrA==",
+      "dev": true
+    },
+    "@types/uuid": {
+      "version": "3.0.0",
+      "resolved": "https://registry.npmjs.org/@types/uuid/-/uuid-3.0.0.tgz",
+      "integrity": "sha512-CGaBAcUB4o+YTaUBZ2VfBc7PcIZXwHflZs4FDtr5Kk7MpAl0PVfH7W/VqoHH+OAG41d9YSCV8eWDfz/KKqVm+A==",
+      "dev": true,
+      "requires": {
+        "@types/node": "8.0.13"
+      }
+    },
+    "bluebird": {
+      "version": "3.5.0",
+      "resolved": "https://registry.npmjs.org/bluebird/-/bluebird-3.5.0.tgz",
+      "integrity": "sha1-eRQg1/VR7qKJdFOop3ZT+WYG1nw=",
+      "dev": true
+    },
+    "joi-browser": {
+      "version": "10.6.0",
+      "resolved": "https://registry.npmjs.org/joi-browser/-/joi-browser-10.6.0.tgz",
+      "integrity": "sha1-tttlM+OhsGefyV3wLraXyOcXCd8=",
+      "dev": true
+    },
+    "typescript": {
+      "version": "2.4.1",
+      "resolved": "https://registry.npmjs.org/typescript/-/typescript-2.4.1.tgz",
+      "integrity": "sha1-w8yxbdqgsjFN4DHn5v7onlujRrw=",
+      "dev": true
+    }
+  }
+}
